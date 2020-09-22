@@ -40,7 +40,7 @@ module.exports = {
       sectionDepth: 2,
       exampleMode: "collapse",
       usageMode: "expand",
-      components: "./src/components/molecules/**/*.js",
+      components: "./src/components/molecules/**/*.ts",
     },
     {
       name: "Organisms",
