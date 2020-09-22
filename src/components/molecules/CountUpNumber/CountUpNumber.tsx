@@ -1,6 +1,5 @@
 import * as React from "react";
 import VisibilitySensor from "react-visibility-sensor";
-import { VisibilitySensorProps } from "./utilsInterface";
 import CountUp, { CountUpProps } from "react-countup";
 import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
@@ -10,11 +9,38 @@ const useStyles = makeStyles((theme) => ({
   root: {},
 }));
 
-/**
- * Component to display the Count Up Numbers
- *
- * @param {Object} props
- */
+// iterface to VisibilitySensor
+interface Shape {
+  top?: number;
+  left?: number;
+  bottom?: number;
+  right?: number;
+}
+
+// iterface to VisibilitySensor
+export interface VisibilitySensorProps {
+  onChange?: (isVisible: boolean) => void;
+  active?: boolean;
+  partialVisibility?: boolean;
+  offset?: Shape;
+  minTopValue?: number;
+  intervalCheck?: boolean;
+  intervalDelay?: number;
+  scrollCheck?: boolean;
+  scrollDelay?: number;
+  scrollThrottle?: number;
+  resizeCheck?: boolean;
+  resizeDelay?: number;
+  resizeThrottle?: number;
+  containment?: any;
+  delayedCall?: boolean;
+  children?:
+    | React.ReactNode
+    | ((args: {
+        isVisible: boolean;
+        visibilityRect?: Shape;
+      }) => React.ReactNode);
+}
 
 interface ICountUpNumberProps {
   /**
@@ -85,6 +111,11 @@ interface ICountUpNumberProps {
   labelProps?: TypographyProps;
 }
 
+/**
+ * Component to display the Count Up Numbers
+ *
+ * @param {Object} props
+ */
 const CountUpNumber: React.FunctionComponent<ICountUpNumberProps> = (props) => {
   const {
     start,
@@ -167,5 +198,3 @@ CountUpNumber.defaultProps = {
 };
 
 export default CountUpNumber;
-
-
