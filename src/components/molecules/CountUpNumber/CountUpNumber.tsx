@@ -64,7 +64,8 @@ interface ICountUpNumberProps {
    */
   end: number;
   /**
-   *
+   * Label of the CountUpNumber
+   * @see http:hdisjdk
    */
   label: React.ReactNode;
   /**
@@ -193,7 +194,6 @@ CountUpNumber.defaultProps = {
   visibilitySensorProps: {},
   wrapperProps: {},
   countWrapperProps: {},
-  countNumberProps: undefined,
   labelProps: {},
 };
 
