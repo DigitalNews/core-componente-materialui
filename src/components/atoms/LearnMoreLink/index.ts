@@ -1,1 +1,1 @@
-export { default } from './LearnMoreLink';
+export { default, ILearnMoreLinkProps } from "./LearnMoreLink";
