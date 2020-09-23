@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-interface IIconAlternateProps {
+export interface IIconAlternateProps {
   /**
    * External classes
    */

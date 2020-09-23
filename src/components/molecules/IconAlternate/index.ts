@@ -1,1 +1,1 @@
-export { default } from './IconAlternate';
+export { default, IIconAlternateProps } from './IconAlternate';
