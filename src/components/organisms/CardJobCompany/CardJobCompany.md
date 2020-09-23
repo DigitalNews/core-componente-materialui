@@ -6,6 +6,7 @@ import { Grid } from "@material-ui/core";
 import { Router } from "react-router-dom";
 import { createBrowserHistory } from "history";
 
+import image from "../../../images/logos/slack.svg";
 import theme from "../../../theme";
 const browserHistory = createBrowserHistory();
 
@@ -17,7 +18,7 @@ const browserHistory = createBrowserHistory();
                     jobTitle="Senior Developer"
                     jobLocation="Milan, Italy"
                     companyName="Slack"
-                    companyLogo="/images/logos/slack.svg"
+                    companyLogo={image}
                     jobsCount="2 jobs"
                     companyInfo="Sync your team's work and activity to share automatically in a channel with a simple plugin."
                 />
@@ -27,7 +28,7 @@ const browserHistory = createBrowserHistory();
                     jobTitle="Web designer internship"
                     jobLocation="Milan, Italy"
                     companyName="Slack"
-                    companyLogo="/images/logos/slack.svg"
+                    companyLogo={image}
                     jobsCount="2 jobs"
                     companyInfo="Sync your team's work and activity to share automatically in a channel with a simple plugin."
                 />
@@ -37,7 +38,7 @@ const browserHistory = createBrowserHistory();
                     jobTitle="UI/UX Designer"
                     jobLocation="Milan, Italy"
                     companyName="Slack"
-                    companyLogo="/images/logos/slack.svg"
+                    companyLogo={image}
                     jobsCount="2 jobs"
                     companyInfo="Sync your team's work and activity to share automatically in a channel with a simple plugin."
                 />
@@ -55,6 +56,7 @@ import { Grid } from "@material-ui/core";
 import { Router } from "react-router-dom";
 import { createBrowserHistory } from "history";
 
+import image from "../../../images/logos/slack.svg";
 import theme from "../../../theme";
 const browserHistory = createBrowserHistory();
 
@@ -67,7 +69,7 @@ const browserHistory = createBrowserHistory();
                     jobTitle="Senior Developer"
                     jobLocation="Milan, Italy"
                     companyName="Slack"
-                    companyLogo="/images/logos/slack.svg"
+                    companyLogo={image}
                     jobsCount="2 jobs"
                     companyInfo="Sync your team's work and activity to share automatically in a channel with a simple plugin."
                 />
@@ -78,7 +80,7 @@ const browserHistory = createBrowserHistory();
                     jobTitle="Web Design"
                     jobLocation="Milan, Italy"
                     companyName="Slack"
-                    companyLogo="/images/logos/slack.svg"
+                    companyLogo={image}
                     jobsCount="2 jobs"
                     companyInfo="Sync your team's work and activity to share automatically in a channel with a simple plugin."
                 />
@@ -89,7 +91,7 @@ const browserHistory = createBrowserHistory();
                     jobTitle="UI/UX Designer"
                     jobLocation="Milan, Italy"
                     companyName="Slack"
-                    companyLogo="/images/logos/slack.svg"
+                    companyLogo={image}
                     jobsCount="2 jobs"
                     companyInfo="Sync your team's work and activity to share automatically in a channel with a simple plugin."
                 />
@@ -107,6 +109,7 @@ import { Grid } from "@material-ui/core";
 import { Router } from "react-router-dom";
 import { createBrowserHistory } from "history";
 
+import image from "../../../images/logos/slack.svg";
 import theme from "../../../theme";
 const browserHistory = createBrowserHistory();
 
@@ -120,7 +123,7 @@ const browserHistory = createBrowserHistory();
                     jobTitle="Senior Developer"
                     jobLocation="Milan, Italy"
                     companyName="Slack"
-                    companyLogo="/images/logos/slack.svg"
+                    companyLogo={image}
                     jobsCount="2 jobs"
                     companyInfo="Sync your team's work and activity to share automatically in a channel with a simple plugin."
                 />
@@ -132,7 +135,7 @@ const browserHistory = createBrowserHistory();
                     jobTitle="Web designer internship"
                     jobLocation="Milan, Italy"
                     companyName="Slack"
-                    companyLogo="/images/logos/slack.svg"
+                    companyLogo={image}
                     jobsCount="2 jobs"
                     companyInfo="Sync your team's work and activity to share automatically in a channel with a simple plugin."
                 />
@@ -144,7 +147,7 @@ const browserHistory = createBrowserHistory();
                     jobTitle="UI/UX Designer"
                     jobLocation="Milan, Italy"
                     companyName="Slack"
-                    companyLogo="/images/logos/slack.svg"
+                    companyLogo={image}
                     jobsCount="2 jobs"
                     companyInfo="Sync your team's work and activity to share automatically in a channel with a simple plugin."
                 />
