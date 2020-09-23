@@ -47,7 +47,7 @@ module.exports = {
       sectionDepth: 2,
       exampleMode: "collapse",
       usageMode: "expand",
-      components: "./src/components/organisms/**/*.js",
+      components: "./src/components/organisms/**/*.ts",
     },
   ],
   webpackConfig: Object.assign({}, require("./webpack.config"), {}),
