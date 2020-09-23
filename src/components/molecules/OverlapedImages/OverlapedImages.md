@@ -3,24 +3,29 @@
 
 import React from "react";
 import { ThemeProvider } from "@material-ui/core/styles";
-
-import theme from "../../../theme";
+import galley1 from '../../../images/photos/expo-gallery/gallery1.jpg'
+import gallery11 from '../../../images/photos/expo-gallery/gallery1@2x.jpg'
+import galley2 from '../../../images/photos/expo-gallery/gallery2.jpg'
+import gallery22 from '../../../images/photos/expo-gallery/gallery2@2x.jpg'
+import galley3 from '../../../images/photos/expo-gallery/gallery3.jpg'
+import gallery33 from '../../../images/photos/expo-gallery/gallery3@2x.jpg'
+ import theme from "../../../theme";
 
 <ThemeProvider theme={theme}>
     <OverlapedImages
         image1={{
-            src: '/images/photos/expo-gallery/gallery1.jpg',
-            srcSet: '/images/photos/expo-gallery/gallery1@2x.jpg 2x',
+            src: galley1,
+            srcSet: gallery11,
             alt: '...',
         }}
         image2={{
-            src: '/images/photos/expo-gallery/gallery2.jpg',
-            srcSet: '/images/photos/expo-gallery/gallery2@2x.jpg 2x',
+            src: galley2,
+            srcSet: gallery22,
             alt: '...',
         }}
         image3={{
-            src: '/images/photos/expo-gallery/gallery3.jpg',
-            srcSet: '/images/photos/expo-gallery/gallery3@2x.jpg 2x',
+            src: galley3,
+            srcSet: gallery33,
             alt: '...',
         }}
     />
