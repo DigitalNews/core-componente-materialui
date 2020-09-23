@@ -3,11 +3,12 @@
 ```jsx
 import React from "react";
 import { ThemeProvider } from "@material-ui/core/styles";
-import "swiper/css/swiper.min.css";
+import 'swiper/swiper-bundle.css'
+// import "swiper/css/swiper.min.css";
 
 import theme from "../../../theme";
 import pace from "../../../images/photos/coworking/place2.jpg";
-import place11 from "./../../images/photos/coworking/place3.jpg";
+import place11 from "../../../images/photos/coworking/place3.jpg";
 
 <ThemeProvider theme={theme}>
   <SwiperImage

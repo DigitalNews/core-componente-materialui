@@ -3,7 +3,6 @@ import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
 import { colors } from "@material-ui/core";
 import Swiper from "swiper";
-
 import { Image } from "../../atoms";
 
 const useStyles = makeStyles((theme) => ({
@@ -94,7 +93,7 @@ const SwiperImage: React.FunctionComponent<ISwiperImageProps> = (props) => {
         prevEl: ".swiper-container .swiper-button-prev",
       },
     });
-  });
+  }, []);
 
   return (
     <div
