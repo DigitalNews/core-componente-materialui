@@ -27,8 +27,7 @@ const useStyles = makeStyles((theme) => ({
  * @param {Object} props
  */
 
-interface ICardPricingStandardProps
-  extends Exclude<ICardBaseProps, React.ElementType> {
+interface ICardPricingStandardProps extends ICardBaseProps {
   /**
    *  External classes
    */
@@ -72,7 +71,7 @@ interface ICardPricingStandardProps
   /**
    * Additional props to pass to the disclaimer Typography component
    */
-  disclaimerProps?: Omit<TypographyProps, "align">;
+  disclaimerProps?: TypographyProps;
   /**
    * Additional props to pass to the feature title Typography component
    */

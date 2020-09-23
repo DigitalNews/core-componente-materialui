@@ -3,7 +3,7 @@
 import React from "react";
 import { ThemeProvider } from "@material-ui/core/styles";
 import { colors, Grid, Button, Typography } from "@material-ui/core";
-import { Icon } from 'components/atoms';
+import { Icon } from '../../../components/atoms';
 
 import theme from "../../../theme";
 
@@ -66,7 +66,7 @@ import theme from "../../../theme";
 import React from "react";
 import { ThemeProvider } from "@material-ui/core/styles";
 import { colors, Grid, Typography, Button } from "@material-ui/core";
-import { Icon } from 'components/atoms';
+import { Icon } from '../../../components/atoms';
 
 import theme from "../../../theme";
 
@@ -132,7 +132,7 @@ import theme from "../../../theme";
 import React from "react";
 import { ThemeProvider } from "@material-ui/core/styles";
 import { colors, Grid, Typography, Button } from "@material-ui/core";
-import { Icon } from 'components/atoms';
+import { Icon } from '../../../components/atoms';
 
 import theme from "../../../theme";
 
