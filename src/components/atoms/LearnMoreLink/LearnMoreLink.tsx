@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-interface ILearnMoreLinkProps {
+export interface ILearnMoreLinkProps {
   /**
    * External classes
    */
