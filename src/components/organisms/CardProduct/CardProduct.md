@@ -8,18 +8,24 @@ import { SwiperImage } from "../../molecules";
 
 import theme from "../../../theme";
 
+import place3 from "../../../images/photos/coworking/place3.jpg";
+import coworking from "../../../images/photos/coworking/coworking-main-hero.jpg";
+import place1 from "../../../images/photos/coworking/place1.jpg";
+import place2 from "../../../images/photos/coworking/place2.jpg";
+
+
 const item = {
     images: [{
-        src: '/images/photos/coworking/place3.jpg',
+        src: place3,
         alt: '', 
     }, {
-        src: '/images/photos/coworking/coworking-main-hero.jpg',
+        src: coworking,
         alt: '', 
     }, {
-        src: '/images/photos/coworking/place1.jpg',
+        src: place1,
         alt: '', 
     }, {
-        src: '/images/photos/coworking/place2.jpg',
+        src: place2,
         alt: '', 
     }],
     title: 'Tenoha Space',
@@ -68,24 +74,31 @@ import { SwiperImage } from "../../molecules";
 
 import theme from "../../../theme";
 
+import place3 from "../../../images/photos/coworking/place3.jpg";
+import coworking from "../../../images/photos/coworking/coworking-main-hero.jpg";
+import place1 from "../../../images/photos/coworking/place1.jpg";
+import place2 from "../../../images/photos/coworking/place2.jpg";
+
+
 const item = {
     images: [{
-        src: '/images/photos/coworking/place3.jpg',
+        src: place3,
         alt: '', 
     }, {
-        src: '/images/photos/coworking/coworking-main-hero.jpg',
+        src: coworking,
         alt: '', 
     }, {
-        src: '/images/photos/coworking/place1.jpg',
+        src: place1,
         alt: '', 
     }, {
-        src: '/images/photos/coworking/place2.jpg',
+        src: place2,
         alt: '', 
     }],
     title: 'Tenoha Space',
     address: 'Via E. Gola 4, 20147 Milan, Italy',
     price: '$980 / month',
 };
+
 
 <ThemeProvider theme={theme}>
     <CardProduct
@@ -129,24 +142,31 @@ import { SwiperImage } from "../../molecules";
 
 import theme from "../../../theme";
 
+import place3 from "../../../images/photos/coworking/place3.jpg";
+import coworking from "../../../images/photos/coworking/coworking-main-hero.jpg";
+import place1 from "../../../images/photos/coworking/place1.jpg";
+import place2 from "../../../images/photos/coworking/place2.jpg";
+
+
 const item = {
     images: [{
-        src: '/images/photos/coworking/place3.jpg',
+        src: place3,
         alt: '', 
     }, {
-        src: '/images/photos/coworking/coworking-main-hero.jpg',
+        src: coworking,
         alt: '', 
     }, {
-        src: '/images/photos/coworking/place1.jpg',
+        src: place1,
         alt: '', 
     }, {
-        src: '/images/photos/coworking/place2.jpg',
+        src: place2,
         alt: '', 
     }],
     title: 'Tenoha Space',
     address: 'Via E. Gola 4, 20147 Milan, Italy',
     price: '$980 / month',
 };
+
 
 <ThemeProvider theme={theme}>
     <CardProduct
@@ -191,24 +211,31 @@ import { SwiperImage } from "../../molecules";
 
 import theme from "../../../theme";
 
+import place3 from "../../../images/photos/coworking/place3.jpg";
+import coworking from "../../../images/photos/coworking/coworking-main-hero.jpg";
+import place1 from "../../../images/photos/coworking/place1.jpg";
+import place2 from "../../../images/photos/coworking/place2.jpg";
+
+
 const item = {
     images: [{
-        src: '/images/photos/coworking/place3.jpg',
+        src: place3,
         alt: '', 
     }, {
-        src: '/images/photos/coworking/coworking-main-hero.jpg',
+        src: coworking,
         alt: '', 
     }, {
-        src: '/images/photos/coworking/place1.jpg',
+        src: place1,
         alt: '', 
     }, {
-        src: '/images/photos/coworking/place2.jpg',
+        src: place2,
         alt: '', 
     }],
     title: 'Tenoha Space',
     address: 'Via E. Gola 4, 20147 Milan, Italy',
     price: '$980 / month',
 };
+
 
 <ThemeProvider theme={theme}>
     <CardProduct
@@ -253,18 +280,24 @@ import { SwiperImage } from "../../molecules";
 
 import theme from "../../../theme";
 
+import place3 from "../../../images/photos/coworking/place3.jpg";
+import coworking from "../../../images/photos/coworking/coworking-main-hero.jpg";
+import place1 from "../../../images/photos/coworking/place1.jpg";
+import place2 from "../../../images/photos/coworking/place2.jpg";
+
+
 const item = {
     images: [{
-        src: '/images/photos/coworking/place3.jpg',
+        src: place3,
         alt: '', 
     }, {
-        src: '/images/photos/coworking/coworking-main-hero.jpg',
+        src: coworking,
         alt: '', 
     }, {
-        src: '/images/photos/coworking/place1.jpg',
+        src: place1,
         alt: '', 
     }, {
-        src: '/images/photos/coworking/place2.jpg',
+        src: place2,
         alt: '', 
     }],
     title: 'Tenoha Space',
