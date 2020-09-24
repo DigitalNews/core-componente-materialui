@@ -41,15 +41,15 @@ interface IOverlapedImagesProps {
   /**
    * Image item - Object of src, srcset and alt properties
    */
-  image1?: imageObject;
+  image1: imageObject;
   /**
    * Image item - Object of src, srcset and alt properties
    */
-  image2?: imageObject;
+  image2: imageObject;
   /**
    * Image item - Object of src, srcset and alt properties
    */
-  image3?: imageObject;
+  image3: imageObject;
 }
 
 /**
