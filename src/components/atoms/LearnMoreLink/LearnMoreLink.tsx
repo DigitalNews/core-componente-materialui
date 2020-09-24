@@ -107,6 +107,7 @@ const LearnMoreLink: React.FunctionComponent<ILearnMoreLinkProps> = (props) => {
     </>
   );
 
+
   if (Component)
     return (
       <Component

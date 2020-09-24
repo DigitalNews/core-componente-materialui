@@ -22,8 +22,7 @@ const browserHistory = createBrowserHistory();
 ```jsx
 import React from "react";
 import { ThemeProvider } from "@material-ui/core/styles";
-import { Router } from "react-router-dom";
-import { Link } from "react-router-dom";
+import { Router, Link } from "react-router-dom";
 import { createBrowserHistory } from "history";
 
 import theme from "../../../theme";
@@ -35,7 +34,7 @@ const browserHistory = createBrowserHistory();
     <LearnMoreLink
       title="learn more"
       component={Link}
-      componentProps={{ to: "#" }}
+      componentProps={{ to: "#hola" }}
     />
   </Router>
 </ThemeProvider>;
