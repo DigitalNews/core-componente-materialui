@@ -33,3 +33,5 @@ export {
   SwiperNumber,
   TypedText,
 } from "./components";
+
+export { default as theme } from "./theme";
