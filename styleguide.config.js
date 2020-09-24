@@ -1,7 +1,7 @@
 module.exports = {
   assetsDir: "public/",
   skipComponentsWithoutExample: true,
-  ignore: ["**/*index.js"],
+  ignore: ["**/*index.ts"],
   pagePerSection: true,
   usageMode: "expand",
   template: {
