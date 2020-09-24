@@ -36,6 +36,7 @@
     "file-loader": "^6.1.0",
     "history": "^5.0.0",
     "i": "^0.3.6",
+    "jarallax": "^1.12.4",
     "npm": "^6.14.8",
     "react": "^16.13.1",
     "react-countup": "^4.3.3",
