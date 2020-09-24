@@ -4,7 +4,9 @@ import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
 
 import "leaflet/dist/leaflet.css";
-import "./index.scss";
+
+// no suport scss
+//import "./index.scss";
 
 import * as L from "leaflet";
 
