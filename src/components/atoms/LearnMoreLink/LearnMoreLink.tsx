@@ -1,5 +1,4 @@
 import * as React from "react";
-// import { Link } from "react-router-dom";
 import ArrowRightAltIcon from "@material-ui/icons/ArrowRightAlt";
 import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
@@ -36,7 +35,11 @@ export interface ILearnMoreLinkProps {
   /**
    * The component to load as a main DOM
    */
-  component?: "a";
+  component?: React.ComponentType<any>;
+  /**
+   * Additional properties to component
+   */
+  componentProps?: { [x: string]: any };
   /**
    * Title of the link
    */
@@ -71,7 +74,8 @@ export interface ILearnMoreLinkProps {
 const LearnMoreLink: React.FunctionComponent<ILearnMoreLinkProps> = (props) => {
   const {
     color,
-    component,
+    component: Component,
+    componentProps,
     variant,
     title,
     href,
@@ -103,6 +107,16 @@ const LearnMoreLink: React.FunctionComponent<ILearnMoreLinkProps> = (props) => {
     </>
   );
 
+  if (Component)
+    return (
+      <Component
+        className={clsx("learn-more-link", classes.root, className)}
+        {...componentProps}
+      >
+        {children}
+      </Component>
+    );
+
   // if (component === "Link") {
   //   return (
   //     <Link
@@ -127,8 +141,8 @@ const LearnMoreLink: React.FunctionComponent<ILearnMoreLinkProps> = (props) => {
 };
 
 LearnMoreLink.defaultProps = {
-  variant: 'subtitle1',
-  href: '#',
+  variant: "subtitle1",
+  href: "#",
   typographyProps: {},
   iconProps: {},
 };
