@@ -4,13 +4,23 @@
     "sourceMap": true,
     "noImplicitAny": true,
     "module": "commonjs",
-    "declaration": true , 
-    "lib": ["es6", "dom", "es2017"],
+    "skipLibCheck": true,
+    "declaration": true,
+    "lib": [
+      "es6",
+      "dom",
+      "es2017"
+    ],
     "target": "es5",
     "jsx": "react"
   },
   "include": [
     "./src/**/*"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules",
+    "./node_modules",
+    "./node_modules/*",
+    "./node_modules/@types/node/index.d.ts",
+  ]
 }
