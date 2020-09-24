@@ -43,13 +43,7 @@ interface IAppProps {
  * @param {Object} props
  */
 const Icon: React.FunctionComponent<IAppProps> = (props) => {
-  const {
-    fontIconClass,
-    size = "small",
-    fontIconColor,
-    className,
-    ...rest
-  } = props;
+  const { fontIconClass, size, fontIconColor, className, ...rest } = props;
 
   const classes = useStyles();
 
@@ -66,6 +60,10 @@ const Icon: React.FunctionComponent<IAppProps> = (props) => {
       {...rest}
     />
   );
+};
+
+Icon.defaultProps = {
+  size: "small",
 };
 
 export default Icon;
