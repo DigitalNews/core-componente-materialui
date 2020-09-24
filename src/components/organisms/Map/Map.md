@@ -1,7 +1,7 @@
 ```jsx
 import React from "react";
 import { ThemeProvider } from "@material-ui/core/styles";
-
+import "leaflet/dist/leaflet.css";
 import theme from "../../../theme";
 
 const mapData = [
