@@ -2,22 +2,8 @@ import * as React from "react";
 import { Map as ReactMap, TileLayer, Marker, MapProps } from "react-leaflet";
 import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
-
-import "leaflet/dist/leaflet.css";
-
 // no suport scss
 //import "./index.scss";
-
-import * as L from "leaflet";
-
-// delete L.Icon.Default.prototype._getIconUrl;
-
-L.Icon.Default.mergeOptions({
-  iconRetinaUrl: require("leaflet/dist/images/marker-icon-2x.png"),
-  iconUrl: require("leaflet/dist/images/marker-icon.png"),
-  shadowUrl: require("leaflet/dist/images/marker-shadow.png"),
-});
-
 const useStyles = makeStyles((theme) => ({
   root: {
     position: "absolute",
@@ -46,7 +32,7 @@ interface IMapProps extends MapProps {
   /**
    * data of the locations. Example: [{ location: { x: number, y: number } }]
    */
-  pins: Array<any>;
+  pins: Array<{ location: { x: number; y: number } }>;
 }
 
 /**
@@ -58,6 +44,16 @@ const Map: React.FunctionComponent<IMapProps> = (props) => {
   const { zoom, center, pins, className, ...rest } = props;
 
   const classes = useStyles();
+
+  React.useEffect(() => {
+    const L = require("leaflet");
+    delete L.Icon.Default.prototype._getIconUrl;
+    L.Icon.Default.mergeOptions({
+      iconRetinaUrl: require("leaflet/dist/images/marker-icon-2x.png").default,
+      iconUrl: require("leaflet/dist/images/marker-icon.png").default,
+      shadowUrl: require("leaflet/dist/images/marker-shadow.png").default,
+    });
+  }, []);
 
   return (
     <ReactMap
