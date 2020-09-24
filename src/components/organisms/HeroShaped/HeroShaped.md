@@ -6,6 +6,7 @@ import { Button } from "@material-ui/core";
 import { Image } from "../../atoms";
 import { SectionHeader } from "../../molecules";
 
+import image from "../../../images/photos/coworking/place1.jpg";
 import theme from "../../../theme";
 
 <ThemeProvider theme={theme}>
@@ -22,7 +23,7 @@ import theme from "../../../theme";
             />
         )}
         rightSide={(
-            <Image src="/images/photos/coworking/place1.jpg" alt="..." style={{ objectFit: 'cover' }} />
+            <Image src={image} alt="..." style={{ objectFit: 'cover' }} />
         )}
     />
 </ThemeProvider>

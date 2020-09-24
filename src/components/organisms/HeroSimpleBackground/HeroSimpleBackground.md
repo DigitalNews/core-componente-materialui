@@ -3,8 +3,8 @@
 import React from "react";
 import { ThemeProvider, useTheme } from "@material-ui/core/styles";
 import { Button } from "@material-ui/core";
-import { SectionHeader } from 'components/molecules';
-import { Section } from 'components/organisms';
+import { SectionHeader } from '../../../components/molecules';
+import { Section } from '../../../components/organisms';
 import ima from "../../../images/shapes/banner-bg.svg"
 import theme from "../../../theme";
 <ThemeProvider theme={theme}>
