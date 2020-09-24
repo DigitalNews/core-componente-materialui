@@ -5,7 +5,7 @@ import {
   LazyLoadImage,
   LazyLoadImageProps,
 } from "react-lazy-load-image-component";
-import "react-lazy-load-image-component/src/effects/opacity.css";
+// import "react-lazy-load-image-component/src/effects/opacity.css";
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -50,15 +50,7 @@ interface IImageProps {
  * @param {Object} props
  */
 const Image: React.FunctionComponent<IImageProps> = (props) => {
-  const {
-    src,
-    srcSet,
-    alt = "...",
-    lazy = true,
-    lazyProps = { width: "auto", height: "auto" },
-    className,
-    ...rest
-  } = props;
+  const { src, srcSet, alt, lazy, lazyProps, className, ...rest } = props;
 
   const classes = useStyles();
   if (lazy) {
@@ -84,6 +76,15 @@ const Image: React.FunctionComponent<IImageProps> = (props) => {
       {...rest}
     />
   );
+};
+
+Image.defaultProps = {
+  alt: "...",
+  lazy: true,
+  lazyProps: {
+    width: "auto",
+    height: "auto",
+  },
 };
 
 export default Image;
