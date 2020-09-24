@@ -9,7 +9,7 @@ A professional React Kit that comes with plenty of ready-to-use Material-UI comp
 
 - npm i core-component-mui
 
-```tsx
+<!-- ```tsx
 import React from "react";
 import { ThemeProvider } from "@material-ui/core/styles";
 import { colors } from "@material-ui/core";
@@ -35,7 +35,7 @@ import { Icon, theme } from "core-component-ui";
     />
   </div>
 </ThemeProvider>;
-```
+``` -->
 
 <br /><br />
 

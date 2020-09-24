@@ -65,7 +65,6 @@ interface ICountUpNumberProps {
   end: number;
   /**
    * Label of the CountUpNumber
-   * @see http:hdisjdk
    */
   label: React.ReactNode;
   /**
