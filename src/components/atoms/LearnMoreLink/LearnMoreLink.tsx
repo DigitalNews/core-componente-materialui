@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import ArrowRightAltIcon from "@material-ui/icons/ArrowRightAlt";
 import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
@@ -36,7 +36,7 @@ export interface ILearnMoreLinkProps {
   /**
    * The component to load as a main DOM
    */
-  component?: "Link" | "a";
+  component?: "a";
   /**
    * Title of the link
    */
@@ -70,14 +70,14 @@ export interface ILearnMoreLinkProps {
  */
 const LearnMoreLink: React.FunctionComponent<ILearnMoreLinkProps> = (props) => {
   const {
-    color = "primary",
-    component = "Link",
-    variant = "subtitle1",
+    color,
+    component,
+    variant,
     title,
-    href = "#",
+    href,
     className,
-    iconProps = {},
-    typographyProps = {},
+    iconProps,
+    typographyProps,
     ...rest
   } = props;
 
@@ -103,17 +103,17 @@ const LearnMoreLink: React.FunctionComponent<ILearnMoreLinkProps> = (props) => {
     </>
   );
 
-  if (component === "Link") {
-    return (
-      <Link
-        to={href}
-        className={clsx("learn-more-link", classes.root, className)}
-        {...rest}
-      >
-        {children}
-      </Link>
-    );
-  }
+  // if (component === "Link") {
+  //   return (
+  //     <Link
+  //       to={href}
+  //       className={clsx("learn-more-link", classes.root, className)}
+  //       {...rest}
+  //     >
+  //       {children}
+  //     </Link>
+  //   );
+  // }
 
   return (
     <a
@@ -124,6 +124,13 @@ const LearnMoreLink: React.FunctionComponent<ILearnMoreLinkProps> = (props) => {
       {children}
     </a>
   );
+};
+
+LearnMoreLink.defaultProps = {
+  variant: 'subtitle1',
+  href: '#',
+  typographyProps: {},
+  iconProps: {},
 };
 
 export default LearnMoreLink;
