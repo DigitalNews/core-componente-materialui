@@ -17,10 +17,6 @@ interface ITypedTextProps extends TypographyProps {
    * react-typed properties. For more info visit https://www.npmjs.com/package/react-typed
    */
   typedProps: ReactTypedProps;
-  /**
-   * component use for Typography
-   */
-  component: any;
 }
 /**
  * Component to display the typed animated texts
