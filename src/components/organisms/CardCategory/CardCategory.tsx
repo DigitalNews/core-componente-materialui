@@ -1,7 +1,7 @@
 import * as React from "react";
 import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
-import CardBase from "../CardBase";
+import CardBase, {ICardBaseProps} from "../CardBase";
 import DescriptionListIcon from '../DescriptionListIcon'
 
 const useStyles = makeStyles((theme) => ({
@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export interface ICardCategoryProps {
+export interface ICardCategoryProps extends ICardBaseProps {
   /**
    * External classes
    */
