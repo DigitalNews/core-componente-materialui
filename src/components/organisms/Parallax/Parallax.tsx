@@ -2,9 +2,6 @@ import * as React from "react";
 import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
 
-// search support for typescript
-const { jarallax } = require("jarallax");
-
 const useStyles = makeStyles((theme) => ({
   root: {
     position: "relative",
@@ -55,7 +52,8 @@ const Parallax: React.FunctionComponent<IParallaxProps> = (props) => {
     if (!jarallaxElems || (jarallaxElems && jarallaxElems.length === 0)) {
       return;
     }
-
+    // search support for typescript
+    const { jarallax } = require("jarallax");
     jarallax(jarallaxElems, { speed: 0.2 });
   });
 
