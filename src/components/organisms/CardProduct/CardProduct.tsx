@@ -36,12 +36,13 @@ const useStyles = makeStyles((theme) => ({
   },
   media: {
     position: "relative",
+    padding: "0px",
     height: 300,
   },
   content: {
     height: "100%",
     display: "flex",
-    flexDirection: "column",
+    flexDirection: "column",  
     alignItems: "center",
     padding: theme.spacing(4, 2),
     "&:last-child": {
