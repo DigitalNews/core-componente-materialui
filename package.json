@@ -1,5 +1,5 @@
 {
-  "name": "core-component-mui",
+  "name": "core-component-ui",
   "version": "1.0.0",
   "description": "componentes personalizados basados en material ui para la creación de paginas web",
   "main": "build/index.js",
