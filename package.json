@@ -1,6 +1,6 @@
 {
   "name": "core-component-ui",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "componentes personalizados basados en material ui para la creación de paginas web",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -31,7 +31,7 @@
   "bugs": {
     "url": "https://github.com/DigitalNews/core-componente-materialui/issues"
   },
-  "homepage": "https://github.com/DigitalNews/core-componente-materialui#readme",
+  "homepage": "https://documentation-core.firebaseapp.com/#/Introduction",
   "peerDependencies": {
     "react": ">=16.13.1",
     "@material-ui/core": ">=4.10.1",

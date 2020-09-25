@@ -42,7 +42,7 @@ import { Icon, theme } from "core-component-ui";
 
 <br /><br />
 
-#### **[Overview Of All Pages](https://thefront.maccarianagency.com)**
+#### **[Overview Of All Pages](https://digitalnew.solutions)**
 
 <br />
 
