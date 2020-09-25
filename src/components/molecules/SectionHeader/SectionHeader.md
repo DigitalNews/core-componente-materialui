@@ -3,8 +3,7 @@
 ```jsx
 import React from "react";
 import { ThemeProvider } from "@material-ui/core/styles";
-
-import theme from "../../../theme";
+import { theme } from "core-component-ui";
 
 <ThemeProvider theme={theme}>
   <SectionHeader
@@ -19,8 +18,7 @@ import theme from "../../../theme";
 ```jsx
 import React from "react";
 import { ThemeProvider } from "@material-ui/core/styles";
-
-import theme from "../../../theme";
+import { theme } from "core-component-ui";
 
 <ThemeProvider theme={theme}>
   <SectionHeader
@@ -40,8 +38,8 @@ import theme from "../../../theme";
 ```jsx
 import React from "react";
 import { ThemeProvider } from "@material-ui/core/styles";
+import { theme } from "core-component-ui";
 
-import theme from "../../../theme";
 
 <ThemeProvider theme={theme}>
   <SectionHeader
@@ -58,8 +56,7 @@ import theme from "../../../theme";
 ```jsx
 import React from "react";
 import { ThemeProvider } from "@material-ui/core/styles";
-
-import theme from "../../../theme";
+import { theme } from "core-component-ui";
 
 <ThemeProvider theme={theme}>
   <SectionHeader title="We are reimagining renting to help you achieve your dreams" />
@@ -72,8 +69,7 @@ import theme from "../../../theme";
 import React from "react";
 import { ThemeProvider } from "@material-ui/core/styles";
 import { Button } from "@material-ui/core";
-
-import theme from "../../../theme";
+import { theme } from "core-component-ui";
 
 <ThemeProvider theme={theme}>
   <SectionHeader
@@ -97,19 +93,26 @@ import theme from "../../../theme";
 import React from "react";
 import { ThemeProvider } from "@material-ui/core/styles";
 import { Button } from "@material-ui/core";
-
-import theme from "../../../theme";
+import { theme } from "core-component-ui";
 
 <ThemeProvider theme={theme}>
   <SectionHeader
     title={
       <>
-        Find a job you love.<a href="#"> Learn more</a>
+        Find a job you love.
+        <a style={{ color: "rgb(0, 0, 238)" }} href="#">
+          {" "}
+          Learn more
+        </a>
       </>
     }
     subtitle={
       <>
-        Try it now.<a href="#"> Learn more</a>
+        Try it now.
+        <a href="#" style={{ color: "rgb(0, 0, 238)" }}>
+          {" "}
+          Learn more
+        </a>
       </>
     }
     ctaGroup={[
@@ -130,20 +133,27 @@ import theme from "../../../theme";
 import React from "react";
 import { ThemeProvider } from "@material-ui/core/styles";
 import { Button } from "@material-ui/core";
-
-import theme from "../../../theme";
+import { theme } from "core-component-ui";
 
 <ThemeProvider theme={theme}>
   <SectionHeader
     label="our process"
     title={
       <>
-        Find a job you love.<a href="#"> Learn more</a>
+        Find a job you love.
+        <a style={{ color: "rgb(0, 0, 238)" }} href="#">
+          {" "}
+          Learn more
+        </a>
       </>
     }
     subtitle={
       <>
-        Try it now.<a href="#"> Learn more</a>
+        Try it now.
+        <a style={{ color: "rgb(0, 0, 238)" }} href="#">
+          {" "}
+          Learn more
+        </a>
       </>
     }
     ctaGroup={[
