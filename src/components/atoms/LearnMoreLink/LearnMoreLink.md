@@ -24,8 +24,7 @@ import React from "react";
 import { ThemeProvider } from "@material-ui/core/styles";
 import { Router, Link } from "react-router-dom";
 import { createBrowserHistory } from "history";
-
-import theme from "../../../theme";
+import { theme } from "core-component-ui";
 
 const browserHistory = createBrowserHistory();
 

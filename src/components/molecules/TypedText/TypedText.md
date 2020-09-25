@@ -1,20 +1,26 @@
 **Basic Example**
-```jsx
 
+```jsx
 import React from "react";
 import { ThemeProvider } from "@material-ui/core/styles";
-
-import theme from "../../../theme";
+import { theme } from "core-component-ui";
 
 <ThemeProvider theme={theme}>
-    <TypedText
-        component="span"
-        variant="h4"
-        color="secondary"
-        typedProps={{
-            strings: [ "Web Developers.", "UI/UX Designers.", "Business Analists.", "Scrum Masters.", "Finance & Sales" ],
-            typeSpeed: 50,
-            loop: true,
-        }}
-    />
-</ThemeProvider>
+  <TypedText
+    component="span"
+    variant="h4"
+    color="secondary"
+    typedProps={{
+      strings: [
+        "Web Developers.",
+        "UI/UX Designers.",
+        "Business Analists.",
+        "Scrum Masters.",
+        "Finance & Sales",
+      ],
+      typeSpeed: 50,
+      loop: true,
+    }}
+  />
+</ThemeProvider>;
+```

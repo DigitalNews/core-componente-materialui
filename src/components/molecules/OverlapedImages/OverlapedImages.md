@@ -9,7 +9,7 @@ import galley2 from "../../../images/photos/expo-gallery/gallery2.jpg";
 import gallery22 from "../../../images/photos/expo-gallery/gallery2@2x.jpg";
 import galley3 from "../../../images/photos/expo-gallery/gallery3.jpg";
 import gallery33 from "../../../images/photos/expo-gallery/gallery3@2x.jpg";
-import theme from "../../../theme";
+import { theme } from "core-component-ui";
 
 <ThemeProvider theme={theme}>
   <OverlapedImages

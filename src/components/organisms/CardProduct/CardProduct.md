@@ -4,11 +4,7 @@
 import React from "react";
 import { ThemeProvider } from "@material-ui/core/styles";
 import { Grid, Typography } from "@material-ui/core";
-
-import { SwiperImage } from "../../molecules";
-
-import theme from "../../../theme";
-
+import { SwiperImage, theme } from "core-component-ui";
 import place3 from "../../../images/photos/coworking/place3.jpg";
 import place1 from "../../../images/photos/coworking/place1.jpg";
 import place2 from "../../../images/photos/coworking/place2.jpg";
@@ -84,11 +80,7 @@ const item = {
 import React from "react";
 import { ThemeProvider } from "@material-ui/core/styles";
 import { Grid, Typography } from "@material-ui/core";
-
-import { SwiperImage } from "../../molecules";
-
-import theme from "../../../theme";
-
+import { SwiperImage, theme } from "core-component-ui";
 import place3 from "../../../images/photos/coworking/place3.jpg";
 import place1 from "../../../images/photos/coworking/place1.jpg";
 import place2 from "../../../images/photos/coworking/place2.jpg";
@@ -165,11 +157,7 @@ const item = {
 import React from "react";
 import { ThemeProvider } from "@material-ui/core/styles";
 import { Grid, Typography } from "@material-ui/core";
-
-import { SwiperImage } from "../../molecules";
-
-import theme from "../../../theme";
-
+import { SwiperImage, theme } from "core-component-ui";
 import place3 from "../../../images/photos/coworking/place3.jpg";
 import place1 from "../../../images/photos/coworking/place1.jpg";
 import place2 from "../../../images/photos/coworking/place2.jpg";
@@ -247,11 +235,7 @@ const item = {
 import React from "react";
 import { ThemeProvider } from "@material-ui/core/styles";
 import { Grid, Typography } from "@material-ui/core";
-
-import { SwiperImage } from "../../molecules";
-
-import theme from "../../../theme";
-
+import { SwiperImage, theme } from "core-component-ui";
 import place3 from "../../../images/photos/coworking/place3.jpg";
 import place1 from "../../../images/photos/coworking/place1.jpg";
 import place2 from "../../../images/photos/coworking/place2.jpg";
@@ -329,11 +313,7 @@ const item = {
 import React from "react";
 import { ThemeProvider } from "@material-ui/core/styles";
 import { Grid, Typography } from "@material-ui/core";
-
-import { SwiperImage } from "../../molecules";
-
-import theme from "../../../theme";
-
+import { SwiperImage, theme } from "core-component-ui";
 import place3 from "../../../images/photos/coworking/place3.jpg";
 import place1 from "../../../images/photos/coworking/place1.jpg";
 import place2 from "../../../images/photos/coworking/place2.jpg";

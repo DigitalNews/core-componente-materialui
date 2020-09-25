@@ -4,11 +4,9 @@
 import React from "react";
 import { ThemeProvider } from "@material-ui/core/styles";
 import { colors } from "@material-ui/core";
-import { IconAlternate } from "../../molecules";
-
 import profile from "../../../images/photos/people/veronica-adams.jpg";
 import profile2 from "../../../images/photos/people/veronica-adams@2x.jpg";
-import theme from "../../../theme";
+import { IconAlternate, theme } from "core-component-ui";
 
 <ThemeProvider theme={theme}>
   <CardReview
@@ -33,9 +31,7 @@ import theme from "../../../theme";
 import React from "react";
 import { ThemeProvider } from "@material-ui/core/styles";
 import { colors } from "@material-ui/core";
-import { IconAlternate } from "../../molecules";
-
-import theme from "../../../theme";
+import { IconAlternate, theme } from "core-component-ui";
 import profile from "../../../images/photos/people/veronica-adams.jpg";
 import profile2 from "../../../images/photos/people/veronica-adams@2x.jpg";
 
@@ -63,9 +59,7 @@ import profile2 from "../../../images/photos/people/veronica-adams@2x.jpg";
 import React from "react";
 import { ThemeProvider } from "@material-ui/core/styles";
 import { colors } from "@material-ui/core";
-import { IconAlternate } from "../../molecules";
-
-import theme from "../../../theme";
+import { IconAlternate, theme } from "core-component-ui";
 import profile from "../../../images/photos/people/veronica-adams.jpg";
 import profile2 from "../../../images/photos/people/veronica-adams@2x.jpg";
 
@@ -94,9 +88,7 @@ import profile2 from "../../../images/photos/people/veronica-adams@2x.jpg";
 import React from "react";
 import { ThemeProvider } from "@material-ui/core/styles";
 import { colors } from "@material-ui/core";
-import { IconAlternate } from "../../molecules";
-
-import theme from "../../../theme";
+import { IconAlternate, theme } from "core-component-ui";
 import profile from "../../../images/photos/people/veronica-adams.jpg";
 import profile2 from "../../../images/photos/people/veronica-adams@2x.jpg";
 
@@ -125,9 +117,7 @@ import profile2 from "../../../images/photos/people/veronica-adams@2x.jpg";
 import React from "react";
 import { ThemeProvider } from "@material-ui/core/styles";
 import { colors } from "@material-ui/core";
-import { IconAlternate } from "../../molecules";
-
-import theme from "../../../theme";
+import { IconAlternate, theme } from "core-component-ui";
 import profile from "../../../images/photos/people/veronica-adams.jpg";
 import profile2 from "../../../images/photos/people/veronica-adams@2x.jpg";
 

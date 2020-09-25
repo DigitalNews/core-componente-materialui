@@ -4,9 +4,8 @@
 import React from "react";
 import { ThemeProvider } from "@material-ui/core/styles";
 import { colors, Grid } from "@material-ui/core";
-
 import image from "../../../images/logos/slack.svg";
-import theme from "../../../theme";
+import { theme } from "core-component-ui";
 
 <ThemeProvider theme={theme}>
   <Grid container spacing={2}>
@@ -56,9 +55,8 @@ import theme from "../../../theme";
 import React from "react";
 import { ThemeProvider } from "@material-ui/core/styles";
 import { colors, Grid } from "@material-ui/core";
-
 import image from "../../../images/logos/slack.svg";
-import theme from "../../../theme";
+import { theme } from "core-component-ui";
 
 <ThemeProvider theme={theme}>
   <Grid container spacing={2}>
@@ -111,9 +109,8 @@ import theme from "../../../theme";
 import React from "react";
 import { ThemeProvider } from "@material-ui/core/styles";
 import { colors, Grid } from "@material-ui/core";
-
 import image from "../../../images/logos/slack.svg";
-import theme from "../../../theme";
+import { theme } from "core-component-ui";
 
 <ThemeProvider theme={theme}>
   <Grid container spacing={2}>

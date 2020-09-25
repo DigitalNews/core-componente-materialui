@@ -164,9 +164,7 @@ import theme from "../../../theme";
 import React from "react";
 import { ThemeProvider } from "@material-ui/core/styles";
 import { Button } from "@material-ui/core";
-import { Image } from "../../atoms";
-
-import theme from "../../../theme";
+import { Image, theme } from "core-component-ui";
 import customer from "../../../images/illustrations/rated-by-our-customer.png";
 
 <ThemeProvider theme={theme}>
