@@ -9,7 +9,7 @@ A professional React Kit that comes with plenty of ready-to-use Material-UI comp
 ### **Quick start**
 
 ```
-npm i core-component-mui
+npm i core-component-ui
 ```
 
 ```tsx
