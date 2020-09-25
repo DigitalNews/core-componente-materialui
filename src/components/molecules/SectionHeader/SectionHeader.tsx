@@ -3,6 +3,7 @@ import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
 import { Grid, Typography, TypographyProps } from "@material-ui/core";
 
+
 const useStyles = makeStyles((theme) => ({
   root: {
     marginBottom: theme.spacing(3),
@@ -92,15 +93,18 @@ interface ISectionHeaderProps {
   subtitleColor?: "textPrimary" | "textSecondary" | "primary" | "secondary";
 
   /**
-   * Additional properties to pass to the label Typography component
+   * Additional properties to pass to the label Typography component.
+   * For more info visit https://material-ui.com/api/typography/
    */
-  labelProps?: object;
+  labelProps?: TypographyProps;
   /**
-   * Additional properties to pass to the title Typography component
+   * Additional properties to pass to the title Typography component.
+   * For more info visit https://material-ui.com/api/typography/
    */
   titleProps?: TypographyProps;
   /**
-   * Additional properties to pass to the subtitle Typography component
+   * Additional properties to pass to the subtitle Typography component.
+   * For more info visit https://material-ui.com/api/typography/
    */
   subtitleProps?: TypographyProps;
 }
@@ -171,7 +175,7 @@ const SectionHeader: React.FunctionComponent<ISectionHeaderProps> = (props) => {
             component="p"
             // component="p"
             align={align || "center"}
-            {...labelProps}
+            {...(labelProps as any)}
           >
             {label}
           </Typography>

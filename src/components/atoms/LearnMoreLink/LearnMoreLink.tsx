@@ -57,11 +57,13 @@ export interface ILearnMoreLinkProps {
    */
   color?: "inherit" | "primary" | "secondary";
   /**
-   * Additional properties to pass to the Icon component
+   * Additional properties to pass to the Icon component.
+   * For more info visit https://material-ui.com/api/icon-button/
    */
   iconProps?: IconButtonProps;
   /**
-   * Additional properties to pass to the Typography component
+   * Additional properties to pass to the Typography component.
+   * For more info visit https://material-ui.com/api/typography/
    */
   typographyProps?: TypographyProps;
 }
@@ -106,7 +108,6 @@ const LearnMoreLink: React.FunctionComponent<ILearnMoreLinkProps> = (props) => {
       </IconButton>
     </>
   );
-
 
   if (Component)
     return (

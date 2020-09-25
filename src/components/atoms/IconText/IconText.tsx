@@ -1,7 +1,7 @@
 import * as React from "react";
 import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
-import { Typography, TypographyProps, IconProps } from "@material-ui/core";
+import { Typography, TypographyProps } from "@material-ui/core";
 import Icon from "../Icon";
 import theme from "../../../theme";
 
@@ -37,9 +37,10 @@ interface IIconTextProps {
   /**
    * Additional properties to pass to the Icon component
    */
-  iconProps?: IconProps;
+  iconProps?: object;
   /**
-   * Additional properties to pass to the Typography component
+   * Additional properties to pass to the Typography component.
+   * For more info visit https://material-ui.com/api/typography/
    */
   typographyProps?: TypographyProps;
 }
@@ -55,8 +56,8 @@ const IconText: React.FunctionComponent<IIconTextProps> = (props) => {
     color,
     fontIconClass,
     className,
-    iconProps = {},
-    typographyProps = {},
+    iconProps,
+    typographyProps,
     ...rest
   } = props;
 
@@ -82,6 +83,11 @@ const IconText: React.FunctionComponent<IIconTextProps> = (props) => {
       </Typography>
     </div>
   );
+};
+
+IconText.defaultProps = {
+  iconProps: {},
+  typographyProps: {},
 };
 
 export default IconText;

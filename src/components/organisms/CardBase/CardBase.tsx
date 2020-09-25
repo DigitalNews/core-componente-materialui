@@ -1,12 +1,7 @@
 import * as React from "react";
 import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
-import {
-  Card,
-  CardContent,
-  CardContentProps,
-  CardProps,
-} from "@material-ui/core";
+import { Card, CardContent, CardContentProps } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -61,7 +56,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export interface ICardBaseProps extends CardProps {
+export interface ICardBaseProps {
   /**
    * External classes
    */
@@ -96,6 +91,7 @@ export interface ICardBaseProps extends CardProps {
   align?: "left" | "right" | "center";
   /**
    * Additional props to pass to the CardContent component
+   * For more info visit https://material-ui.com/api/card-content/
    */
   cardContentProps?: CardContentProps;
 }

@@ -2,13 +2,14 @@ import * as React from "react";
 import clsx from "clsx";
 import Typed, { ReactTypedProps } from "react-typed";
 import { makeStyles } from "@material-ui/core/styles";
-import { Typography, TypographyProps } from "@material-ui/core";
+import { ITypographyProps } from "../../../type";
+import { Typography } from "@material-ui/core";
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   root: {},
 }));
 
-interface ITypedTextProps extends TypographyProps {
+interface ITypedTextProps extends ITypographyProps {
   /**
    * External classes
    */
@@ -20,6 +21,8 @@ interface ITypedTextProps extends TypographyProps {
 }
 /**
  * Component to display the typed animated texts
+ * Content component based on the API of the Typography material ui. 
+ * Learn documentation more props https://material-ui.com/api/typography/.
  *
  * @param {Object} props
  */

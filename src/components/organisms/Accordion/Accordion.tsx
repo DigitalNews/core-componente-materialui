@@ -45,19 +45,23 @@ interface IAccordionProps {
     title: string;
   }>;
   /**
-   * Additional properties to pass to the title Typography component
+   * Additional properties to pass to the title Typography component.
+   * For more info visit https://material-ui.com/api/typography/
    */
   titleProps?: TypographyProps;
   /**
-   * Additional properties to pass to the subtitle Typography component
+   * Additional properties to pass to the subtitle Typography component.
+   * For more info visit https://material-ui.com/api/typography/
    */
   subtitleProps?: TypographyProps;
   /**
-   * Additional properties to pass to the text Typography component
+   * Additional properties to pass to the text Typography component.
+   * For more info visit https://material-ui.com/api/typography/
    */
   textProps?: TypographyProps;
   /**
-   * Additional properties to pass to the link component
+   * Additional properties to pass to the link component.
+   * For more info visit https://material-ui.com/api/typography/
    */
   linkProps?: ILearnMoreLinkProps;
 }

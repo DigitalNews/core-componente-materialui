@@ -7,7 +7,7 @@ import IconAlternate, {
 } from "../../molecules/IconAlternate";
 import CardBase, { ICardBaseProps } from "../CardBase";
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   root: {
     height: "100%",
     width: "100%",
@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
 
 type justifyGrid = "center" | "flex-end" | "flex-start";
 
-interface ICardPromoProps extends Omit<ICardBaseProps, "color"> {
+interface ICardPromoProps extends ICardBaseProps {
   /**
    * External classes
    */
@@ -64,15 +64,18 @@ interface ICardPromoProps extends Omit<ICardBaseProps, "color"> {
    */
   iconAlternateProps?: IIconAlternateProps;
   /**
-   * Additional props to pass to the title Typography component
+   * Additional props to pass to the title Typography component.
+   * For more info visit https://material-ui.com/api/typography/
    */
   titleProps?: TypographyProps;
   /**
-   * Additional props to pass to the subtitle Typography component
+   * Additional props to pass to the subtitle Typography component.
+   * For more info visit https://material-ui.com/api/typography/
    */
   subtitleProps?: TypographyProps;
   /**
-   * Additional props to pass to the desciption Typography component
+   * Additional props to pass to the desciption Typography component.
+   * For more info visit https://material-ui.com/api/typography/
    */
   descriptionProps?: TypographyProps;
 }

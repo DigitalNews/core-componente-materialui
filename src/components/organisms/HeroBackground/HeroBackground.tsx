@@ -4,7 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import { colors } from "@material-ui/core";
 import Section from "../Section";
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   root: {
     position: "relative",
     display: "flex",

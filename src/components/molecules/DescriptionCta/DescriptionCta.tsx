@@ -41,27 +41,33 @@ interface IDescriptionCtaProps {
    */
   align?: "left" | "right" | "center";
   /**
-   * Additional properties to pass to the wrapper Grid item components
+   * Additional properties to pass to the wrapper Grid item components.
+   * For more info visit https://material-ui.com/api/grid/
    */
   wrapperProps?: GridProps;
   /**
-   * Additional properties to pass to the title Typography components
+   * Additional properties to pass to the title Typography components.
+   * For more info visit https://material-ui.com/api/typography/
    */
   titleProps?: TypographyProps;
   /**
-   * Additional properties to pass to the subtitle Typography components
+   * Additional properties to pass to the subtitle Typography components.
+   * For more info visit https://material-ui.com/api/typography/
    */
   subtitleProps?: TypographyProps;
   /**
-   * Additional properties to pass to the button group div container
+   * Additional properties to pass to the button group div container.
+   * For more info visit https://material-ui.com/api/grid/
    */
   buttonGroupProps?: GridProps;
   /**
-   * Additional properties to pass to the primary button wrapper div container
+   * Additional properties to pass to the primary button wrapper div container.
+   * For more info visit https://material-ui.com/api/grid/
    */
   primaryButtonWrapperProps?: GridProps;
   /**
-   * Additional properties to pass to the secondary button wrapper div container
+   * Additional properties to pass to the secondary button wrapper div container.
+   * For more info visit https://material-ui.com/api/grid/  
    */
   secondaryButtonWrapperProps?: GridProps;
 }

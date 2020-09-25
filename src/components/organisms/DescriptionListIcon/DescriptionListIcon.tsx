@@ -59,11 +59,13 @@ export interface IDescriptionListIconProps {
    */
   subtitleVariant?: variant;
   /**
-   * Additional props to pass to the title Typography component
+   * Additional props to pass to the title Typography component.
+   * For more info visit https://material-ui.com/api/typography/
    */
   titleProps?: TypographyProps;
   /**
-   * Additional props to pass to the subtitle Typography component
+   * Additional props to pass to the subtitle Typography component.
+   * For more info visit https://material-ui.com/api/typography/
    */
   subtitleProps?: TypographyProps;
 }

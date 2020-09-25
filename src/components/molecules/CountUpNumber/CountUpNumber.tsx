@@ -98,7 +98,8 @@ interface ICountUpNumberProps {
    */
   wrapperProps?: object;
   /**
-   * Additional properties to pass to the count wrapper Typography component
+   * Additional properties to pass to the count wrapper Typography component.
+   * For more info visit https://material-ui.com/api/typography/
    */
   countWrapperProps?: TypographyProps;
   /**
@@ -106,7 +107,8 @@ interface ICountUpNumberProps {
    */
   countNumberProps?: CountUpProps;
   /**
-   * Additional properties to pass to the label Typography component
+   * Additional properties to pass to the label Typography component.
+   * For more info visit https://material-ui.com/api/typography/
    */
   labelProps?: TypographyProps;
 }

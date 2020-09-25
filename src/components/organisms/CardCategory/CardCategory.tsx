@@ -1,17 +1,17 @@
 import * as React from "react";
 import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
-import CardBase, {ICardBaseProps} from "../CardBase";
-import DescriptionListIcon from '../DescriptionListIcon'
+import CardBase from "../CardBase";
+import DescriptionListIcon from "../DescriptionListIcon";
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   root: {
     height: "100%",
     width: "100%",
   },
 }));
 
-export interface ICardCategoryProps extends ICardBaseProps {
+export interface ICardCategoryProps {
   /**
    * External classes
    */

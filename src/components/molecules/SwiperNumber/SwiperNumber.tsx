@@ -32,11 +32,13 @@ interface ISwiperNumberProps {
    */
   items: Array<{ number: string; title: string }>;
   /**
-   * The additional properties to pass to the number Typography component
+   * The additional properties to pass to the number Typography component.
+   * For more info visit https://material-ui.com/api/typography/ 
    */
   numberProps?: TypographyProps;
   /**
-   * The additional properties to pass to the label Typography component
+   * The additional properties to pass to the label Typography component.
+   * For more info visit. https://material-ui.com/api/typography/
    */
   labelProps?: TypographyProps;
 }

@@ -5,7 +5,6 @@ import {
   Card,
   CardContent as MuiCardContent,
   CardMedia as MuiCardMedia,
-  CardProps,
 } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
@@ -42,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
   content: {
     height: "100%",
     display: "flex",
-    flexDirection: "column",  
+    flexDirection: "column",
     alignItems: "center",
     padding: theme.spacing(4, 2),
     "&:last-child": {
@@ -66,7 +65,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-interface ICardProductProps extends CardProps {
+interface ICardProductProps {
   /**
    * External classes
    */

@@ -61,19 +61,23 @@ interface ICardPricingStandardProps extends ICardBaseProps {
    */
   disclaimer?: string;
   /**
-   * Additional props to pass to the title Typography component
+   * Additional props to pass to the title Typography component.
+   * For more info visit https://material-ui.com/api/typography/
    */
   titleProps?: TypographyProps;
   /**
-   * Additional props to pass to the subtitle Typography component
+   * Additional props to pass to the subtitle Typography component.
+   * For more info visit https://material-ui.com/api/typography/
    */
   subtitleProps?: TypographyProps;
   /**
-   * Additional props to pass to the disclaimer Typography component
+   * Additional props to pass to the disclaimer Typography component.
+   * For more info visit https://material-ui.com/api/typography/
    */
   disclaimerProps?: TypographyProps;
   /**
-   * Additional props to pass to the feature title Typography component
+   * Additional props to pass to the feature title Typography component.
+   * For more info visit https://material-ui.com/api/typography/
    */
   featureTitleProps?: TypographyProps;
 }

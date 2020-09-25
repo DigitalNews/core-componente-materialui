@@ -13,7 +13,7 @@ import {
 } from "@material-ui/core";
 import CardBase, { ICardBaseProps } from "../CardBase";
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   root: {
     height: "100%",
     width: "100%",
@@ -38,7 +38,7 @@ interface ICardReviewProps extends ICardBaseProps {
   /**
    * Reviewer photo to show inside the review card.Should be an object with src and srcSet properties
    */
-  authorPhoto: { src: string, srcSet: string };
+  authorPhoto: { src: string; srcSet: string };
   /**
    * Reviewer name to show inside the review card
    */
@@ -71,7 +71,8 @@ interface ICardReviewProps extends ICardBaseProps {
     | "body2"
     | "srOnly";
   /**
-   * Additional props to pass to the text Typography component
+   * Additional props to pass to the text Typography component.
+   * For more info visit https://material-ui.com/api/typography/
    */
   textProps?: TypographyProps;
   /**
