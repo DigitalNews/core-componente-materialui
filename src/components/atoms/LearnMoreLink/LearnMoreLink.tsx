@@ -146,6 +146,7 @@ LearnMoreLink.defaultProps = {
   variant: "subtitle1",
   href: "#",
   typographyProps: {},
+  color: "primary",
   iconProps: {},
 };
 
