@@ -1,0 +1,41 @@
+{
+  "name": "DigitalNew",
+  "icons": [
+    {
+      "src": "/favicons/android-icon-36x36.jpeg",
+      "sizes": "36x36",
+      "type": "image/jpeg",
+      "density": "0.75"
+    },
+    {
+      "src": "/favicons/android-icon-48x48.jpeg",
+      "sizes": "48x48",
+      "type": "image/jpeg",
+      "density": "1.0"
+    },
+    {
+      "src": "/favicons/android-icon-72x72.jpeg",
+      "sizes": "72x72",
+      "type": "image/jpeg",
+      "density": "1.5"
+    },
+    {
+      "src": "/favicons/android-icon-96x96.jpeg",
+      "sizes": "96x96",
+      "type": "image/jpeg",
+      "density": "2.0"
+    },
+    {
+      "src": "/favicons/android-icon-144x144.jpeg",
+      "sizes": "144x144",
+      "type": "image/jpeg",
+      "density": "3.0"
+    },
+    {
+      "src": "/favicons/android-icon-192x192.jpeg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "density": "4.0"
+    }
+  ]
+}
