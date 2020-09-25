@@ -1,15 +1,18 @@
-## [core-componente-ui](https://digitalnew.solutions)
+## [core-componente-ui](https://github.com/DigitalNews/core-componente-materialui)
 
 Material React Landing Pages Kit made with [Material UI's](https://material-ui.com/?ref=digitalnew-solutions) components, [React](https://reactjs.org/?ref=digitalnew-solutions) and of course [NextJS](https://nextjs.org/?ref=digitalnew-solutions) to boost your app development process!
 A professional React Kit that comes with plenty of ready-to-use Material-UI components that will help you to build faster & beautiful Fontend pages. Each component is fully customizable, responsive and easy to integrate.
 
-<br /><br />
+![All Contributors](https://img.shields.io/github/contributors/DigitalNews/core-componente-materialui?color=orange&style=flat-square)
+[![Stable Release](https://img.shields.io/npm/v/formik.svg)](https://www.npmjs.com/package/core-component-ui)
 
 ### **Quick start**
 
-- npm i core-component-mui
+```
+npm i core-component-mui
+```
 
-<!-- ```tsx
+```tsx
 import React from "react";
 import { ThemeProvider } from "@material-ui/core/styles";
 import { colors } from "@material-ui/core";
@@ -35,7 +38,7 @@ import { Icon, theme } from "core-component-ui";
     />
   </div>
 </ThemeProvider>;
-``` -->
+```
 
 <br /><br />
 
@@ -79,6 +82,10 @@ core-component-mui was designed as a rich system from the start, which is reflec
 ### **MUI Documentation**
 
 The full documentation for the React Material Kit can be found [here](https://material-ui.com?ref=digitalnew-solutions).
+
+### **Core component Documentation**
+
+The full documentation for the core-component-ui can be found [here](https://documentation-core.firebaseapp.com/).
 
 <br /><br />
 
