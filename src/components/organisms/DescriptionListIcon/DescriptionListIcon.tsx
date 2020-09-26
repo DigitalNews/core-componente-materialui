@@ -3,7 +3,7 @@ import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
 import { Grid, Typography, TypographyProps } from "@material-ui/core";
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   root: {},
   title: {
     fontWeight: 700,

@@ -9,7 +9,7 @@ import {
   TypographyProps,
 } from "@material-ui/core";
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   root: {},
 }));
 
