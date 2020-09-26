@@ -2,7 +2,7 @@ import * as React from "react";
 import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
 import { Grid, Typography, colors } from "@material-ui/core";
-import CardBase, { ICardBaseProps } from "../../organisms/CardBase/CardBase";
+import CardBase, { ICardBaseProps } from "../CardBase/CardBase";
 
 const useStyles = makeStyles((theme) => ({
   root: {

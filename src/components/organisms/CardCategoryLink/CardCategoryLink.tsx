@@ -11,7 +11,7 @@ import ArrowRightAltIcon from "@material-ui/icons/ArrowRightAlt";
 import IconAlternate, {
   IIconAlternateProps,
 } from "../../molecules/IconAlternate/IconAlternate";
-import CardBase, { ICardBaseProps } from "../../organisms/CardBase/CardBase";
+import CardBase, { ICardBaseProps } from "../CardBase/CardBase";
 
 const useStyles = makeStyles(() => ({
   root: {
