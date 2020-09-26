@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Link } from "react-router-dom";
 import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
 import {
@@ -79,6 +78,14 @@ export interface ICardCategoryLinkProps extends ICardBaseProps {
    * For more info visit https://material-ui.com/api/typography/
    */
   subtitleProps?: TypographyProps;
+  /**
+   * Component use to link card
+   */
+  componentLink?: React.ComponentType<any>;
+  /**
+   * component link props <a> or personalized 
+   */
+  linkProps?: { [x: string]: any };
 }
 
 /**
@@ -98,6 +105,8 @@ const CardCategoryLink: React.FunctionComponent<ICardCategoryLinkProps> = (
     align,
     className,
     iconAlternateProps,
+    componentLink: Component,
+    linkProps,
     titleProps,
     subtitleProps,
     ...rest
@@ -148,17 +157,31 @@ const CardCategoryLink: React.FunctionComponent<ICardCategoryLinkProps> = (
           </Grid>
         )}
       </Grid>
-      <Link
-        to={href}
-        className={clsx("card-category-link__item", classes.categoryIconButton)}
-      >
-        <IconButton className="card-category-link__icon-button">
-          <ArrowRightAltIcon
-            className="card-category-link__icon"
-            style={{ color: color[500] }}
-          />
-        </IconButton>
-      </Link>
+      {Component ? (
+        <Component
+          className={clsx(
+            "card-category-link__item",
+            classes.categoryIconButton
+          )}
+          {...linkProps}
+        ></Component>
+      ) : (
+        <a
+          href={href}
+          className={clsx(
+            "card-category-link__item",
+            classes.categoryIconButton
+          )}
+          {...linkProps}
+        >
+          <IconButton className="card-category-link__icon-button">
+            <ArrowRightAltIcon
+              className="card-category-link__icon"
+              style={{ color: color[500] }}
+            />
+          </IconButton>
+        </a>
+      )}
     </CardBase>
   );
 };

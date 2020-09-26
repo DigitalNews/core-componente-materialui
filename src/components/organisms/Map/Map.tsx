@@ -46,6 +46,8 @@ const Map: React.FunctionComponent<IMapProps> = (props) => {
   const classes = useStyles();
 
   React.useEffect(() => {
+    if (typeof window === "undefined") return;
+    if (typeof document === "undefined") return;
     const L = require("leaflet");
     delete L.Icon.Default.prototype._getIconUrl;
     L.Icon.Default.mergeOptions({
