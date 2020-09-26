@@ -23,7 +23,7 @@ export {
   IconText,
   Image,
   LearnMoreLink,
-  Map,
+  //Map,
   OverlapedImages,
   Parallax,
   Section,

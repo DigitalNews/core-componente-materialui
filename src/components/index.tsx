@@ -27,7 +27,7 @@ export {
   HeroShaped,
   HeroSideImage,
   HeroSimpleBackground,
-  Map,
+  //Map,
   Parallax,
   Section,
   SectionAlternate,
