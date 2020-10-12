@@ -12,7 +12,7 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-export interface ICardCategoryProps extends ICardBaseProps {
+export interface ICardCategoryProps extends Omit<ICardBaseProps, "children"> {
   /**
    * External classes
    */
