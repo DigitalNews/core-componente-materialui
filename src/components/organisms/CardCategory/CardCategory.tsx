@@ -3,6 +3,7 @@ import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
 import CardBase from "../CardBase";
 import DescriptionListIcon from "../DescriptionListIcon";
+import { ICardBaseProps } from "../CardBase/CardBase";
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -11,7 +12,7 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-export interface ICardCategoryProps {
+export interface ICardCategoryProps extends ICardBaseProps {
   /**
    * External classes
    */
