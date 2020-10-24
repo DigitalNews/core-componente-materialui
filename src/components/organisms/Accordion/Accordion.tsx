@@ -13,7 +13,9 @@ import {
 } from "@material-ui/core";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
-import LearnMoreLink, { ILearnMoreLinkProps } from "../../atoms/LearnMoreLink/LearnMoreLink";
+import LearnMoreLink, {
+  ILearnMoreLinkProps,
+} from "../../atoms/LearnMoreLink/LearnMoreLink";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -63,7 +65,7 @@ interface IAccordionProps {
    * Additional properties to pass to the link component.
    * For more info visit https://material-ui.com/api/typography/
    */
-  linkProps?: ILearnMoreLinkProps;
+  linkProps?: ILearnMoreLinkProps<any>;
 }
 
 /**
