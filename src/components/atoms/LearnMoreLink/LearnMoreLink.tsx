@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export interface ILearnMoreLinkProps {
+export interface ILearnMoreLinkProps<T> {
   /**
    * External classes
    */
@@ -39,7 +39,7 @@ export interface ILearnMoreLinkProps {
   /**
    * Additional properties to component
    */
-  componentProps?: { [x: string]: any };
+  componentProps?: T;
   /**
    * Title of the link
    */
@@ -66,6 +66,10 @@ export interface ILearnMoreLinkProps {
    * For more info visit https://material-ui.com/api/typography/
    */
   typographyProps?: TypographyProps;
+  /**
+   * next ssr link active, default false.
+   */
+  isNext: boolean;
 }
 
 /**
@@ -73,7 +77,7 @@ export interface ILearnMoreLinkProps {
  *
  * @param {Object} props
  */
-const LearnMoreLink: React.FunctionComponent<ILearnMoreLinkProps> = (props) => {
+const LearnMoreLink = <T,>(props: ILearnMoreLinkProps<T>) => {
   const {
     color,
     component: Component,
@@ -84,6 +88,7 @@ const LearnMoreLink: React.FunctionComponent<ILearnMoreLinkProps> = (props) => {
     className,
     iconProps,
     typographyProps,
+    isNext,
     ...rest
   } = props;
 
@@ -112,10 +117,18 @@ const LearnMoreLink: React.FunctionComponent<ILearnMoreLinkProps> = (props) => {
   if (Component)
     return (
       <Component
-        className={clsx("learn-more-link", classes.root, className)}
+        className={
+          !isNext ? clsx("learn-more-link", classes.root, className) : undefined
+        }
         {...componentProps}
       >
-        {children}
+        {isNext ? (
+          <a className={clsx("learn-more-link", classes.root, className)}>
+            children
+          </a>
+        ) : (
+          children
+        )}
       </Component>
     );
 
@@ -146,6 +159,7 @@ LearnMoreLink.defaultProps = {
   variant: "subtitle1",
   href: "#",
   typographyProps: {},
+  isNext: false,
   color: "primary",
   iconProps: {},
 };
