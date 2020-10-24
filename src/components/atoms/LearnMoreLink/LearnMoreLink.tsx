@@ -124,7 +124,7 @@ const LearnMoreLink = <T,>(props: ILearnMoreLinkProps<T>) => {
       >
         {isNext ? (
           <a className={clsx("learn-more-link", classes.root, className)}>
-            children
+            {children}
           </a>
         ) : (
           children
