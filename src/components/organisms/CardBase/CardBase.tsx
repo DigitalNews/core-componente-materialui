@@ -64,7 +64,7 @@ export interface ICardBaseProps {
   /**
    * The children content of the basic card
    */
-  children: React.ReactNode;
+  children?: React.ReactNode;
   /**
    * Whether to show custom shadow
    */
